@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterVC">
+            <connections>
+                <outlet property="userName" destination="t7F-zI-wsH" id="dJO-l9-wH1"/>
+                <outlet property="userPwd" destination="6v7-vz-s7D" id="DCI-CI-etf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t7F-zI-wsH">
+                    <rect key="frame" x="60" y="100" width="239" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6v7-vz-s7D">
+                    <rect key="frame" x="60" y="166" width="239" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTY-rO-3YH">
+                    <rect key="frame" x="60" y="288" width="239" height="30"/>
+                    <color key="backgroundColor" red="0.15071996939999999" green="1" blue="0.36040232700000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="注册">
+                        <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="registerClick:" destination="-1" eventType="touchUpInside" id="ceH-U1-Ded"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GTY-rO-3YH" firstAttribute="top" secondItem="6v7-vz-s7D" secondAttribute="bottom" constant="92" id="G6H-ib-jyg"/>
+                <constraint firstItem="GTY-rO-3YH" firstAttribute="leading" secondItem="6v7-vz-s7D" secondAttribute="leading" id="Mce-0t-SYE"/>
+                <constraint firstItem="6v7-vz-s7D" firstAttribute="centerX" secondItem="GTY-rO-3YH" secondAttribute="centerX" id="T7E-Vo-8KH"/>
+                <constraint firstItem="t7F-zI-wsH" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="80" id="eSQ-Mk-cuh"/>
+                <constraint firstItem="t7F-zI-wsH" firstAttribute="trailing" secondItem="6v7-vz-s7D" secondAttribute="trailing" id="gZ5-5d-KcD"/>
+                <constraint firstItem="t7F-zI-wsH" firstAttribute="leading" secondItem="6v7-vz-s7D" secondAttribute="leading" id="kFj-8q-Zbz"/>
+                <constraint firstItem="GTY-rO-3YH" firstAttribute="trailing" secondItem="6v7-vz-s7D" secondAttribute="trailing" id="nLK-LF-QB9"/>
+                <constraint firstItem="t7F-zI-wsH" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="60" id="nwz-Lu-BdB"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="t7F-zI-wsH" secondAttribute="trailing" constant="76" id="sXW-Hy-r7x"/>
+                <constraint firstItem="6v7-vz-s7D" firstAttribute="top" secondItem="t7F-zI-wsH" secondAttribute="bottom" constant="36" id="zlk-6U-t1t"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

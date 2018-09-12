@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC">
+            <connections>
+                <outlet property="userName" destination="1t9-WE-6Rn" id="KPf-Uf-VfU"/>
+                <outlet property="userPwd" destination="ANc-tM-fB9" id="TNI-z4-Pq1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入用户名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1t9-WE-6Rn">
+                    <rect key="frame" x="44" y="69" width="239" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ANc-tM-fB9">
+                    <rect key="frame" x="44" y="135" width="239" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewB-45-Rle">
+                    <rect key="frame" x="44" y="257" width="239" height="30"/>
+                    <color key="backgroundColor" red="0.15071996941148524" green="1" blue="0.36040232695109542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="loginClick:" destination="-1" eventType="touchUpInside" id="TD8-jt-JvD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kPh-Mf-fUh">
+                    <rect key="frame" x="267" y="318" width="54" height="30"/>
+                    <state key="normal" title="注册--&gt;"/>
+                    <connections>
+                        <action selector="registerClick:" destination="-1" eventType="touchUpInside" id="Ryi-Fj-ZxM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ewB-45-Rle" firstAttribute="top" secondItem="ANc-tM-fB9" secondAttribute="bottom" constant="92" id="086-3u-afQ"/>
+                <constraint firstItem="1t9-WE-6Rn" firstAttribute="leading" secondItem="ANc-tM-fB9" secondAttribute="leading" id="6PW-L2-bh3"/>
+                <constraint firstItem="ANc-tM-fB9" firstAttribute="top" secondItem="1t9-WE-6Rn" secondAttribute="bottom" constant="36" id="PLl-AF-TRZ"/>
+                <constraint firstItem="1t9-WE-6Rn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="44" id="RoU-gF-d19"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kPh-Mf-fUh" secondAttribute="trailing" constant="54" id="e7X-dL-nKM"/>
+                <constraint firstItem="kPh-Mf-fUh" firstAttribute="top" secondItem="ewB-45-Rle" secondAttribute="bottom" constant="31" id="eJt-Iz-RRr"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="1t9-WE-6Rn" secondAttribute="trailing" constant="92" id="fyT-Ze-gmT"/>
+                <constraint firstItem="ewB-45-Rle" firstAttribute="leading" secondItem="ANc-tM-fB9" secondAttribute="leading" id="gdy-Kz-JpA"/>
+                <constraint firstItem="1t9-WE-6Rn" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="49" id="h6n-rE-Eya"/>
+                <constraint firstItem="1t9-WE-6Rn" firstAttribute="trailing" secondItem="ANc-tM-fB9" secondAttribute="trailing" id="l9l-2f-Bf5"/>
+                <constraint firstItem="ewB-45-Rle" firstAttribute="trailing" secondItem="ANc-tM-fB9" secondAttribute="trailing" id="n1E-5p-z5P"/>
+                <constraint firstItem="ANc-tM-fB9" firstAttribute="centerX" secondItem="ewB-45-Rle" secondAttribute="centerX" id="wbc-UX-Dc9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+</document>

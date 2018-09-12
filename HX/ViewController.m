@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "RegisterVC.h"
+#import "LoginVC.h"
 @interface ViewController ()
 
 @end
@@ -16,9 +17,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"click to start";
+    self.view.backgroundColor = [UIColor whiteColor];
 }
-
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    LoginVC * lvc = [[LoginVC alloc]init];
+    [self.navigationController pushViewController:lvc animated:YES];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -13,6 +13,11 @@
 		0457BCE52148B25A007F9FAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0457BCE42148B25A007F9FAC /* Assets.xcassets */; };
 		0457BCE82148B25A007F9FAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0457BCE62148B25A007F9FAC /* LaunchScreen.storyboard */; };
 		0457BCEB2148B25A007F9FAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457BCEA2148B25A007F9FAC /* main.m */; };
+		0457BCF42148B466007F9FAC /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457BCF22148B466007F9FAC /* LoginVC.m */; };
+		0457BCF52148B466007F9FAC /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0457BCF32148B466007F9FAC /* LoginVC.xib */; };
+		0457BCF92148B5C6007F9FAC /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0457BCF72148B5C6007F9FAC /* RegisterVC.m */; };
+		0457BCFA2148B5C6007F9FAC /* RegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0457BCF82148B5C6007F9FAC /* RegisterVC.xib */; };
+		6D7866B5D3B5661875BAC3F2 /* libPods-HX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0570F570BB5F24B18BCAB21 /* libPods-HX.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,15 @@
 		0457BCE72148B25A007F9FAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0457BCE92148B25A007F9FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0457BCEA2148B25A007F9FAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0457BCF12148B466007F9FAC /* LoginVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		0457BCF22148B466007F9FAC /* LoginVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		0457BCF32148B466007F9FAC /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		0457BCF62148B5C6007F9FAC /* RegisterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
+		0457BCF72148B5C6007F9FAC /* RegisterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
+		0457BCF82148B5C6007F9FAC /* RegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterVC.xib; sourceTree = "<group>"; };
+		148BBA7CA20E4CFB6320C451 /* Pods-HX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HX.release.xcconfig"; path = "Pods/Target Support Files/Pods-HX/Pods-HX.release.xcconfig"; sourceTree = "<group>"; };
+		B22316B0B2886F4D83549CE5 /* Pods-HX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HX/Pods-HX.debug.xcconfig"; sourceTree = "<group>"; };
+		C0570F570BB5F24B18BCAB21 /* libPods-HX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D7866B5D3B5661875BAC3F2 /* libPods-HX.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,8 @@
 			children = (
 				0457BCDA2148B258007F9FAC /* HX */,
 				0457BCD92148B258007F9FAC /* Products */,
+				C3FB82C2E5E5E5405BB67BAE /* Pods */,
+				07A29393CDD2463DD60F48EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +79,12 @@
 				0457BCDC2148B258007F9FAC /* AppDelegate.m */,
 				0457BCDE2148B258007F9FAC /* ViewController.h */,
 				0457BCDF2148B258007F9FAC /* ViewController.m */,
+				0457BCF12148B466007F9FAC /* LoginVC.h */,
+				0457BCF22148B466007F9FAC /* LoginVC.m */,
+				0457BCF32148B466007F9FAC /* LoginVC.xib */,
+				0457BCF62148B5C6007F9FAC /* RegisterVC.h */,
+				0457BCF72148B5C6007F9FAC /* RegisterVC.m */,
+				0457BCF82148B5C6007F9FAC /* RegisterVC.xib */,
 				0457BCE12148B258007F9FAC /* Main.storyboard */,
 				0457BCE42148B25A007F9FAC /* Assets.xcassets */,
 				0457BCE62148B25A007F9FAC /* LaunchScreen.storyboard */,
@@ -71,6 +94,23 @@
 			path = HX;
 			sourceTree = "<group>";
 		};
+		07A29393CDD2463DD60F48EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0570F570BB5F24B18BCAB21 /* libPods-HX.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3FB82C2E5E5E5405BB67BAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B22316B0B2886F4D83549CE5 /* Pods-HX.debug.xcconfig */,
+				148BBA7CA20E4CFB6320C451 /* Pods-HX.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0457BCEE2148B25A007F9FAC /* Build configuration list for PBXNativeTarget "HX" */;
 			buildPhases = (
+				6D1982ADA0FB6E0282A40F7E /* [CP] Check Pods Manifest.lock */,
 				0457BCD42148B258007F9FAC /* Sources */,
 				0457BCD52148B258007F9FAC /* Frameworks */,
 				0457BCD62148B258007F9FAC /* Resources */,
+				A8D81577D30F91345C513D71 /* [CP] Embed Pods Frameworks */,
+				377013B5C35BF708324BC5AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,11 +173,74 @@
 			files = (
 				0457BCE82148B25A007F9FAC /* LaunchScreen.storyboard in Resources */,
 				0457BCE52148B25A007F9FAC /* Assets.xcassets in Resources */,
+				0457BCF52148B466007F9FAC /* LoginVC.xib in Resources */,
 				0457BCE32148B258007F9FAC /* Main.storyboard in Resources */,
+				0457BCFA2148B5C6007F9FAC /* RegisterVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		377013B5C35BF708324BC5AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HX/Pods-HX-resources.sh",
+				"${PODS_ROOT}/EaseUI/EaseUI/resources/EaseUIResource.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/MWPhotoBrowser/MWPhotoBrowser.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EaseUIResource.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MWPhotoBrowser.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HX/Pods-HX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D1982ADA0FB6E0282A40F7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HX-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8D81577D30F91345C513D71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HX/Pods-HX-frameworks.sh",
+				"${PODS_ROOT}/Hyphenate/iOS_Pods_IMFullSDK_V3.5.0/Hyphenate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hyphenate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HX/Pods-HX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0457BCD42148B258007F9FAC /* Sources */ = {
@@ -143,6 +249,8 @@
 			files = (
 				0457BCE02148B258007F9FAC /* ViewController.m in Sources */,
 				0457BCEB2148B25A007F9FAC /* main.m in Sources */,
+				0457BCF92148B5C6007F9FAC /* RegisterVC.m in Sources */,
+				0457BCF42148B466007F9FAC /* LoginVC.m in Sources */,
 				0457BCDD2148B258007F9FAC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +389,7 @@
 		};
 		0457BCEF2148B25A007F9FAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B22316B0B2886F4D83549CE5 /* Pods-HX.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +407,7 @@
 		};
 		0457BCF02148B25A007F9FAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 148BBA7CA20E4CFB6320C451 /* Pods-HX.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

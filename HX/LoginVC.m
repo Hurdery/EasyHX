@@ -30,10 +30,13 @@
     [[EMClient sharedClient] loginWithUsername:_userName.text
                                       password:_userPwd.text
                                     completion:^(NSString *aUsername, EMError *aError) {
-                                        if (!aError) {
+                                        if (!aError)
+                                        {
      EaseMessageViewController *chatController = [[EaseMessageViewController alloc] initWithConversationChatter:@"qwer" conversationType:EMConversationTypeChat];
      [self.navigationController pushViewController:chatController animated:YES];
-                                        } else {
+                                        }
+                                        else
+                                        {
                                             NSLog(@"登录失败");
                                         }
                                     }];
@@ -41,7 +44,6 @@
     
 }
 - (IBAction)registerClick:(id)sender {
-
     RegisterVC * rvc =[[RegisterVC alloc ]init];
     [self.navigationController pushViewController:rvc animated:YES];
 }
